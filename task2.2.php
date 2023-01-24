@@ -1,18 +1,22 @@
 <?php
 //trait creation 
-trait getdata{
-    
-  public $first_number,$second_number;
-  public $result;
+trait getdata
+{
+    public $first_number;
+    public $second_number;
+    public $result;
 
-  function getdata(float $first_value,float $second_value){
-    $this->first_number = $first_value;
-    $this->second_number = $second_value;
-  }
+    //method for get input
+    function getdata(float $first_value,float $second_value)
+    {  
+       $this->first_number = $first_value;
+       $this->second_number = $second_value;
+    }  
 
 }
 //class declaration and definations
-class devide{
+class devide
+{
     use getdata;
   
     function devide()
