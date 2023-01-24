@@ -1,7 +1,9 @@
 <?php
-class calculator{
+class calculator 
+{   
     //properties
-    public $first_number,$second_number;
+    public $first_number;
+    public $second_number;
     public $result;
 
     //methods and functions
@@ -13,12 +15,14 @@ class calculator{
     }
 
     //methods for two numbers
-    function subtract(){
+    function subtract()
+    {
         $this->result = $this->first_number - $this->second_number;
         return $this->result;
     }
 
 }
+
 $object = new calculator();
 $object->first_number = 10.43;
 $object->second_number = 20;
